@@ -1,0 +1,38 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFrameworks>net452;netstandard2.1;</TargetFrameworks>
+        <Description>Liyanjie.Pinyin.ChineseWord</Description>
+        <Copyright>© Liyanjie.net</Copyright>
+        <Authors>liyanjie8712@outlook.com</Authors>
+        <Company>Liyanjie.net</Company>
+        <RepositoryUrl>https://github.com/liyanjie8712/Pinyin</RepositoryUrl>
+        <PackageProjectUrl>https://github.com/liyanjie8712/Pinyin</PackageProjectUrl>
+        <RepositoryType>Git</RepositoryType>
+    </PropertyGroup>
+
+    <PropertyGroup Condition="'$(Configuration)'=='Release'">
+        <DocumentationFile>bin\Release\Liyanjie.Pinyin.ChineseWord.xml</DocumentationFile>
+    </PropertyGroup>
+
+    <Target Name="MovePackage" AfterTargets="Pack">
+        <Move SourceFiles="$(OutputPath)$(PackageId).$(PackageVersion).nupkg" DestinationFolder="C:\_NugetPackages\" />
+    </Target>
+
+    <ItemGroup Condition="'$(TargetFramework)'=='net452'">
+        <PackageReference Include="System.ValueTuple" Version="4.5.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <None Remove="ChineseWords.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="ChineseWords.txt" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\Liyanjie.Pinyin.ChineseChar\Liyanjie.Pinyin.ChineseChar.csproj" />
+    </ItemGroup>
+
+</Project>

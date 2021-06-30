@@ -1,0 +1,53 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ConsoleApp", "test\ConsoleApp\ConsoleApp.csproj", "{28837EBC-1A8B-4E2E-B592-8351E37D2609}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{145AC343-CB92-40EC-869E-97A42EF89654}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E59B12FC-BEA1-444E-BB61-325C0F2BD999}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Pinyin.ChineseChar", "src\Liyanjie.Pinyin.ChineseChar\Liyanjie.Pinyin.ChineseChar.csproj", "{9CC837C9-E784-424C-A02E-BC9AD2AC379E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Pinyin.ChineseWord", "src\Liyanjie.Pinyin.ChineseWord\Liyanjie.Pinyin.ChineseWord.csproj", "{B4BBFDAC-8D95-493A-A22D-704633FC6BAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liyanjie.Pinyin", "src\Liyanjie.Pinyin\Liyanjie.Pinyin.csproj", "{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{28837EBC-1A8B-4E2E-B592-8351E37D2609}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28837EBC-1A8B-4E2E-B592-8351E37D2609}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28837EBC-1A8B-4E2E-B592-8351E37D2609}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28837EBC-1A8B-4E2E-B592-8351E37D2609}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9CC837C9-E784-424C-A02E-BC9AD2AC379E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9CC837C9-E784-424C-A02E-BC9AD2AC379E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9CC837C9-E784-424C-A02E-BC9AD2AC379E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9CC837C9-E784-424C-A02E-BC9AD2AC379E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4BBFDAC-8D95-493A-A22D-704633FC6BAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4BBFDAC-8D95-493A-A22D-704633FC6BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4BBFDAC-8D95-493A-A22D-704633FC6BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4BBFDAC-8D95-493A-A22D-704633FC6BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{28837EBC-1A8B-4E2E-B592-8351E37D2609} = {145AC343-CB92-40EC-869E-97A42EF89654}
+		{9CC837C9-E784-424C-A02E-BC9AD2AC379E} = {E59B12FC-BEA1-444E-BB61-325C0F2BD999}
+		{B4BBFDAC-8D95-493A-A22D-704633FC6BAD} = {E59B12FC-BEA1-444E-BB61-325C0F2BD999}
+		{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B} = {E59B12FC-BEA1-444E-BB61-325C0F2BD999}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {296DFCFC-431C-475A-84DC-E358E65CC4A3}
+	EndGlobalSection
+EndGlobal
