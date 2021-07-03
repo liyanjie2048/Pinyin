@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Pinyin.ChineseChar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Pinyin.ChineseWord", "src\Liyanjie.Pinyin.ChineseWord\Liyanjie.Pinyin.ChineseWord.csproj", "{B4BBFDAC-8D95-493A-A22D-704633FC6BAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Liyanjie.Pinyin", "src\Liyanjie.Pinyin\Liyanjie.Pinyin.csproj", "{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Liyanjie.Pinyin", "src\Liyanjie.Pinyin\Liyanjie.Pinyin.csproj", "{087E6D96-DA2E-4115-9B29-F3A8E64FAF0B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{049D4E86-FF09-46B0-ABF6-2BCB44B162F7}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
