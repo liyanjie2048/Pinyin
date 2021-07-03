@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -32,6 +33,13 @@ namespace Liyanjie.Pinyin.ChineseWord
 
         public static IReadOnlyDictionary<string, string[]> ChineseWords => chineseWords;
 
+        public static void AddChineseWord(string chineseWord, params string[] pinyins)
+        {
+            if (chineseWords.ContainsKey(chineseWord))
+                chineseWords[chineseWord] = chineseWords[chineseWord].Concat(pinyins).ToArray();
+            else
+                chineseWords[chineseWord] = pinyins;
+        }
         public static bool TryGetPinyin(string chineseWord, out string[] pinyin)
         {
             if (ChineseWords.ContainsKey(chineseWord))

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Linq;
 using System.Reflection;
 using System.Text;
 
@@ -8,7 +9,7 @@ namespace Liyanjie.Pinyin.ChineseChar
 {
     public class ChineseCharHelper
     {
-        static readonly Dictionary<char, (string, string[])> chineseChars;
+        static readonly Dictionary<char, (string Code, string[] Pinyins)> chineseChars;
 
         static ChineseCharHelper()
         {
@@ -33,6 +34,13 @@ namespace Liyanjie.Pinyin.ChineseChar
 
         public static IReadOnlyDictionary<char, (string Code, string[] Pinyins)> ChineseChars => chineseChars;
 
+        public static void AddChineseChar(char chineseChar, string code, params string[] pinyins)
+        {
+            if (chineseChars.ContainsKey(chineseChar))
+                chineseChars[chineseChar] = (chineseChars[chineseChar].Code, chineseChars[chineseChar].Pinyins.Concat(pinyins).ToArray());
+            else
+                chineseChars[chineseChar] = (code, pinyins);
+        }
         public static string[] GetPinyins(char chineseChar)
         {
             return ChineseChars.ContainsKey(chineseChar)
