@@ -1,9 +1,9 @@
 # Pinyin 
 
-moved to https://github.com/liyanjie8712/BuildingBlocks /Liyanjie.Utilities.Cn
+Moved to https://github.com/liyanjie8712/BuildingBlocks /Liyanjie.Utilities.Cn
 
 - 基于以下项目实现
-  - **结巴分词**(https://github.com/anderscui/jieba.NET)
+  - ~~**结巴分词**(https://github.com/anderscui/jieba.NET)~~
   - **汉字拼音数据**(https://github.com/mozillazg/pinyin-data) **/master/pinyin.txt**
   - **词语拼音数据**(https://github.com/mozillazg/phrase-pinyin-data) **/master/large_pinyin.txt**
 
