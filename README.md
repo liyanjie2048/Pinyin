@@ -1,4 +1,6 @@
-# Pinyin moved to https://github.com/liyanjie8712/BuildingBlocks
+# Pinyin 
+
+moved to https://github.com/liyanjie8712/BuildingBlocks /Liyanjie.Utilities.Cn
 
 - 基于以下项目实现
   - **结巴分词**(https://github.com/anderscui/jieba.NET)
