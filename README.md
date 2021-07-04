@@ -1,36 +1,34 @@
-# Liyanjie.Pinyin
+# Pinyin moved to https://github.com/liyanjie8712/BuildingBlocks
 
-Pinyin moved to https://github.com/liyanjie8712/BuildingBlocks
+- Âü∫‰∫é‰ª•‰∏ãÈ°πÁõÆÂÆûÁé∞
+  - **ÁªìÂ∑¥ÂàÜËØç**(https://github.com/anderscui/jieba.NET)
+  - **Ê±âÂ≠óÊãºÈü≥Êï∞ÊçÆ**(https://github.com/mozillazg/pinyin-data) **/master/pinyin.txt**
+  - **ËØçËØ≠ÊãºÈü≥Êï∞ÊçÆ**(https://github.com/mozillazg/phrase-pinyin-data) **/master/large_pinyin.txt**
 
-- ª˘”⁄“‘œ¬œÓƒø µœ÷
-  - **Ω·∞Õ∑÷¥ **(https://github.com/anderscui/jieba.NET)
-  - **∫∫◊÷∆¥“Ù ˝æ›**(https://github.com/mozillazg/pinyin-data) **/master/pinyin.txt**
-  - **¥ ”Ô∆¥“Ù ˝æ›**(https://github.com/mozillazg/phrase-pinyin-data) **/master/large_pinyin.txt**
-
-- ºÚµ•≤‚ ‘
-    - ¥˙¬Î
+- ÁÆÄÂçïÊµãËØï
+    - ‰ª£Á†Å
     ```csharp
     var array = new[]
     {
-        "÷ÿ«Ï÷ÿπ§",
-        "µ•”⁄∆Ôµ•≥µ",
-        "’€±æ¥Ú’€µƒ’€Ã⁄",
-        "∏…◊≈º±≤ªƒ‹◊≈ ÷",
-        "Õ¬ﬁ¨µƒﬁ¨—‹",
-        "“ª∆ÿ Æ∫Æ±ª∆ÿπ‚",
-        " °≥§≤ª °»À ¬",
-        "∂»¿œ ¶“‘º∫∂»»À",
-        "≥ˆ≤Ó≤ªƒ‹≥ˆ≤Ó¥Ì",
-        "“¬◊≈∫Æÿ˜£¨”Ô—‘ÿ˜À◊",
-        "“¯––∑¢––π…∆±",
-        "∂Òπ∑’Êø…∂Ò",
-        "µ˜≤È∫Û‘Ÿµ˜Ω‚",
-        "¡Ω Ø Ø◊”",
-        "µØπ≠µØ¡¶ Æ◊„",
-        "∞«œ¬∆§–¨◊∑∞« ÷",
-        "ø÷œ≈œ≈≤ªµπŒ“",
-        "“Ù¿÷¿œ ¶¿÷”⁄÷˙»À",
-        "…œ–£»•–£≥°",
+        "ÈáçÂ∫ÜÈáçÂ∑•",
+        "Âçï‰∫éÈ™ëÂçïËΩ¶",
+        "ÊäòÊú¨ÊâìÊäòÁöÑÊäòËÖæ",
+        "Âπ≤ÁùÄÊÄ•‰∏çËÉΩÁùÄÊâã",
+        "ÂêêËïÉÁöÑËïÉË°ç",
+        "‰∏ÄÊõùÂçÅÂØíË¢´ÊõùÂÖâ",
+        "ÁúÅÈïø‰∏çÁúÅ‰∫∫‰∫ã",
+        "Â∫¶ËÄÅÂ∏à‰ª•Â∑±Â∫¶‰∫∫",
+        "Âá∫Â∑Æ‰∏çËÉΩÂá∫Â∑ÆÈîô",
+        "Ë°£ÁùÄÂØí‰ºßÔºåËØ≠Ë®Ä‰ºß‰øó",
+        "Èì∂Ë°åÂèëË°åËÇ°Á•®",
+        "ÊÅ∂ÁãóÁúüÂèØÊÅ∂",
+        "Ë∞ÉÊü•ÂêéÂÜçË∞ÉËß£",
+        "‰∏§Áü≥Áü≥Â≠ê",
+        "ÂºπÂºìÂºπÂäõÂçÅË∂≥",
+        "Êâí‰∏ãÁöÆÈûãËøΩÊâíÊâã",
+        "ÊÅêÂêìÂêì‰∏çÂÄíÊàë",
+        "Èü≥‰πêËÄÅÂ∏à‰πê‰∫éÂä©‰∫∫",
+        "‰∏äÊ†°ÂéªÊ†°Âú∫",
     };
     foreach (var item in array)
     {
@@ -38,29 +36,29 @@ Pinyin moved to https://github.com/liyanjie8712/BuildingBlocks
         Console.WriteLine($"{item} > {string.Join(' ', pinyins)}");
     }
     ```
-    -  ‰≥ˆ
+    - ËæìÂá∫
     ```
-    ÷ÿ«Ï÷ÿπ§ > ch®Æng q®¨ng zh®∞ng g®≠ng
-    µ•”⁄∆Ôµ•≥µ > ch®¢n y®≤ q®™ d®°n ch®•
-    ’€±æ¥Ú’€µƒ’€Ã⁄ > sh®¶ b®ßn d®£ zh®¶ de zh®• t®¶ng
-    ∏…◊≈º±≤ªƒ‹◊≈ ÷ > g®°n zh®¢o j®™ b®¥ n®¶ng zhu®Æ sh®Øu
-    Õ¬ﬁ¨µƒﬁ¨—‹ > t®≥ b®≠ de f®¢n y®£n
-    “ª∆ÿ Æ∫Æ±ª∆ÿπ‚ > y®© p®¥ sh®™ h®¢n b®®i b®§o gu®°ng
-     °≥§≤ª °»À ¬ > sh®ßng zh®£ng b®¥ x®´ng r®¶n sh®¨
-    ∂»¿œ ¶“‘º∫∂»»À > d®¥ l®£o sh®© y®´ j®´ du®Æ r®¶n
-    ≥ˆ≤Ó≤ªƒ‹≥ˆ≤Ó¥Ì > ch®± ch®°i b®¥ n®¶ng ch®± ch®° cu®∞
-    “¬◊≈∫Æÿ˜£¨”Ô—‘ÿ˜À◊ > y®© zhu®Æ h®¢n chen * y®≥ y®¢n c®°ng s®≤
-    “¯––∑¢––π…∆± > y®™n h®¢ng f®° x®™ng g®≥ pi®§o
-    ∂Òπ∑’Êø…∂Ò > ®® g®Øu zh®•n k®ß w®¥
-    µ˜≤È∫Û‘Ÿµ˜Ω‚ > di®§o ch®¢ h®∞u z®§i ti®¢o ji®ß
-    ¡Ω Ø Ø◊” > li®£ng sh®™ sh®™ z®´
-    µØπ≠µØ¡¶ Æ◊„ > d®§n g®≠ng t®¢n l®¨ sh®™ z®≤
-    ∞«œ¬∆§–¨◊∑∞« ÷ > b®° xi®§ p®™ xi®¶ zhu®© p®¢ sh®Øu
-    ø÷œ≈œ≈≤ªµπŒ“ > k®Øng h®® xi®§ b®¥ d®§o w®Ø
-    “Ù¿÷¿œ ¶¿÷”⁄÷˙»À > y®©n yu®® l®£o sh®© l®® y®≤ zh®¥ r®¶n
-    …œ–£»•–£≥° > sh®§ng xi®§o q®¥ ji®§o ch®£ng
+    ÈáçÂ∫ÜÈáçÂ∑• > ch√≥ng q√¨ng zh√≤ng g≈çng
+    Âçï‰∫éÈ™ëÂçïËΩ¶ > ch√°n y√∫ q√≠ dƒÅn chƒì
+    ÊäòÊú¨ÊâìÊäòÁöÑÊäòËÖæ > sh√© bƒõn d«é zh√© de zhƒì t√©ng
+    Âπ≤ÁùÄÊÄ•‰∏çËÉΩÁùÄÊâã > gƒÅn zh√°o j√≠ b√π n√©ng zhu√≥ sh«íu
+    ÂêêËïÉÁöÑËïÉË°ç > t«î b≈ç de f√°n y«én
+    ‰∏ÄÊõùÂçÅÂØíË¢´ÊõùÂÖâ > yƒ´ p√π sh√≠ h√°n b√®i b√†o guƒÅng
+    ÁúÅÈïø‰∏çÁúÅ‰∫∫‰∫ã > shƒõng zh«éng b√π x«êng r√©n sh√¨
+    Â∫¶ËÄÅÂ∏à‰ª•Â∑±Â∫¶‰∫∫ > d√π l«éo shƒ´ y«ê j«ê du√≥ r√©n
+    Âá∫Â∑Æ‰∏çËÉΩÂá∫Â∑ÆÈîô > ch≈´ chƒÅi b√π n√©ng ch≈´ chƒÅ cu√≤
+    Ë°£ÁùÄÂØí‰ºßÔºåËØ≠Ë®Ä‰ºß‰øó > yƒ´ zhu√≥ h√°n chen * y«î y√°n cƒÅng s√∫
+    Èì∂Ë°åÂèëË°åËÇ°Á•® > y√≠n h√°ng fƒÅ x√≠ng g«î pi√†o
+    ÊÅ∂ÁãóÁúüÂèØÊÅ∂ > √® g«íu zhƒìn kƒõ w√π
+    Ë∞ÉÊü•ÂêéÂÜçË∞ÉËß£ > di√†o ch√° h√≤u z√†i ti√°o jiƒõ
+    ‰∏§Áü≥Áü≥Â≠ê > li«éng sh√≠ sh√≠ z«ê
+    ÂºπÂºìÂºπÂäõÂçÅË∂≥ > d√†n g≈çng t√°n l√¨ sh√≠ z√∫
+    Êâí‰∏ãÁöÆÈûãËøΩÊâíÊâã > bƒÅ xi√† p√≠ xi√© zhuƒ´ p√° sh«íu
+    ÊÅêÂêìÂêì‰∏çÂÄíÊàë > k«íng h√® xi√† b√π d√†o w«í
+    Èü≥‰πêËÄÅÂ∏à‰πê‰∫éÂä©‰∫∫ > yƒ´n yu√® l«éo shƒ´ l√® y√∫ zh√π r√©n
+    ‰∏äÊ†°ÂéªÊ†°Âú∫ > sh√†ng xi√†o q√π ji√†o ch«éng
     ```
-    - ‘§∆⁄¥ÌŒÛ
+    - È¢ÑÊúüÈîôËØØ
     ```
-    ¡Ω Ø Ø◊” > li®£ng sh®™ sh®™ z®´
+    ‰∏§Áü≥Áü≥Â≠ê > li«éng sh√≠ sh√≠ z«ê
     ```
